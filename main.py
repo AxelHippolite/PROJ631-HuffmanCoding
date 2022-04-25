@@ -20,3 +20,7 @@ if __name__ == "__main__":
 
     file_manager.freq_writer(freq, name)
     file_manager.bin_writer(result, name)
+
+    final_size = file_manager.get_size("results/" + name[:-4] + "_comp.bin") #+ file_manager.get_size("results/" + name[:-4] + "_freq.txt")
+    initial_size = file_manager.get_size("assets/" + name)
+    rate_compression = 1 - (final_size / initial_size)
