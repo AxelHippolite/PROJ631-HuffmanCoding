@@ -13,13 +13,16 @@ def code_tree(tree, code=''):
     if tree.isLeaf():
         return {tree.label: code}
     (left, right) = (tree.left_ch, tree.right_ch)
-    path = dict()
-    path.update(code_tree(left, code + '0'))
-    path.update(code_tree(right, code + '1'))
-    return path
+    d = dict()
+    d.update(code_tree(left, code + '0'))
+    d.update(code_tree(right, code + '1'))
+    return d
 
 def encode(dic, text):
     code = ''
     for i in text:
         code += dic[i]
     return code
+
+def average_bits(dic):
+    return sum([len(x) for x in list(dic.values())])/len([len(x) for x in list(dic.values())])
