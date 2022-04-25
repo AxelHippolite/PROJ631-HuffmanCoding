@@ -1,5 +1,6 @@
 import occurency
 import huffman
+import file_manager
 from binary_tree import BTree
 
 if __name__ == "__main__":
@@ -16,3 +17,6 @@ if __name__ == "__main__":
 
     encoding = huffman.encode(paths, text)
     result = int(encoding, base=2).to_bytes((len(encoding)+7)//8, byteorder='big')
+
+    file_manager.freq_writer(freq, name)
+    file_manager.bin_writer(result, name)
