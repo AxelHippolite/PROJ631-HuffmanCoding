@@ -1,3 +1,5 @@
+import os
+
 def freq_writer(freq, name):
     file = open("results/" + name[:-4] + "_freq.txt", "w")
     file.write(str(len(freq)) + '\n')
@@ -12,3 +14,6 @@ def bin_writer(encoding, name):
     file = open("results/" + name[:-4] + "_comp.bin", "wb")
     file.write(encoding)
     file.close()
+
+def get_size(path):
+    return os.path.getsize(path)
