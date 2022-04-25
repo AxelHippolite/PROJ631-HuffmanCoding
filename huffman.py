@@ -17,3 +17,9 @@ def code_tree(tree, code=''):
     path.update(code_tree(left, code + '0'))
     path.update(code_tree(right, code + '1'))
     return path
+
+def encode(dic, text):
+    code = ''
+    for i in text:
+        code += dic[i]
+    return code
