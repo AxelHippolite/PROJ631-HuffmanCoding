@@ -11,3 +11,5 @@ if __name__ == "__main__":
 
     nodes = [BTree(occ[0], occ[1]) for occ in freq]
     root = huffman.create_tree(nodes)
+
+    paths = huffman.code_tree(root)
