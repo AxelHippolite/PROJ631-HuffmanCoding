@@ -13,3 +13,6 @@ if __name__ == "__main__":
     root = huffman.create_tree(nodes)
 
     paths = huffman.code_tree(root)
+
+    encoding = huffman.encode(paths, text)
+    result = int(encoding, base=2).to_bytes((len(encoding)+7)//8, byteorder='big')
