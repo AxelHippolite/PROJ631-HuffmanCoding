@@ -4,7 +4,8 @@ import file_manager
 from binary_tree import BTree
 
 if __name__ == "__main__":
-    name = 'textesimple.txt'
+    print("########## Compression ##########")
+    name = input("Enter Name File : ")
     f = open('assets/' + name, 'r')
     text = f.read()
     freq = occurency.finder(text)
@@ -26,3 +27,7 @@ if __name__ == "__main__":
     rate_compression = 1 - (final_size / initial_size)
 
     average_bits = huffman.average_bits(paths)
+    
+    print("Compression Rate (without alphabet file) :", rate_compression)
+    print("Average Bits per Encoded Character :", average_bits)
+    print("#################################")
