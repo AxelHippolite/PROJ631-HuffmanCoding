@@ -18,6 +18,7 @@ The GIF below illustrates the different steps detailed above :
 
 ## WARNING
 The compression ratio is calculated using the following formula : *Rate = 1 - (Final Volume / Initial Volume)*. However, the value of the *Final Volume* corresponds **only** to the size of the BINARY file. This choice was made to avoid having a negative compression rate since with the solution chosen to store the *alphabet file* (in TXT format), the final volume will almost always be greater than the initial volume.
-
+## Version
+Made with Python 3.8.0
 ## Referals
 D.A. Huffman, A method for the construction of minimum-redundancy codes, Proceedings of the I.R.E., Septembre 1952, pp. 1098-1102.
