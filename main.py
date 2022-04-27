@@ -31,3 +31,4 @@ if __name__ == "__main__":
     print("Compression Rate (without alphabet file) :", rate_compression)
     print("Average Bits per Encoded Character :", average_bits)
     print("#################################")
+    input("Press any key to Continue...")
