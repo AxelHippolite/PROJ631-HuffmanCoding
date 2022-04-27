@@ -1,4 +1,4 @@
-# PROJ631-HuffmanCoding
+![](assets/title.jpg)
 ## Introduction
 Huffman coding is a method of data compression. Its principle is to replace a character with a sequence of bits of variable length. The idea is to encode what is frequent in a few bits and what is rare in longer sequences of bits. It allows lossless compression, that is to say a sequence of bits strictly identical to the original is restored by decompression. 
 ## How Does It Works ?
